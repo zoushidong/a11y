@@ -1,0 +1,26 @@
+FIREFOX TESTS
+-----------
+Tests that verify firefox6 change home page and load home page functionality.
+
+Safety
+------
+None of these tests touches any configuration or system files. They are safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Available Tests
+---------------
+ 
+* Firefox home testing
+  - Set a new homepage
+    Test to set new homepage for firefox and verify it works
+  - Restore to default
+    Test to restore to default homepage for firefox and verify it works
+* Firefox search testing
+  - Search keyword in search engine
+    Test to give a keyword and preferred firefox search engine, then do searching
+* Firefox tab testing
+  - Open a new tab and load page
+    Test to open a new tab and load homepage to verify multi-tab functionality    

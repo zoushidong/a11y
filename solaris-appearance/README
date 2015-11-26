@@ -1,0 +1,23 @@
+SOLARIS GNOME APPEARANCE PROPERTIES TESTS
+=================================
+
+Safety
+------
+
+The tests will change the user theme, background and font settings, but they don't touch any system file.They are safe to run. The tests will revert the system appearance preferences to system default status.
+
+Configuration
+-------------
+
+The tests don't need any special configuration.
+
+Available Tests
+---------------
+
+* Change the System Theme
+* Change the Window Border.
+* Change the Icon Theme.
+* Change the Pointer Theme.
+* Change the System Background to other pictures
+* Change the Fonts to other font family, style and size
+

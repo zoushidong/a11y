@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<suite name="Solaris Background Test">
+  <class>solaris_background.SolarisBackgroundTests</class>
+  <description>
+    Tests which verify Solaris desktop background can be changed by gnome-appearance-properties
+  </description>
+  <case name="Change background to jpg file">
+    <method>change_background_to_jpg</method>
+    <description>Test that changes the background to jpg file.</description>
+    <args>
+      <background_path>data/background.jpg</background_path>
+    </args>
+  </case>
+  <case name="Change background to bmp file">
+    <method>change_background_to_bmp</method>
+    <description>Test that changes the background to bmp file.</description>
+    <args>
+      <background_path>data/background.bmp</background_path>
+    </args>
+  </case>
+  <case name="Change background to png file">
+    <method>change_background_to_png</method>
+    <description>Test that changes the background to png file.</description>
+    <args>
+      <background_path>data/background.png</background_path>
+    </args>
+  </case>
+  <case name="Revert background to default background">
+    <method>revert_background_to_default</method>
+    <description>Test that reverts the background to default background picture.</description>
+  </case>
+</suite>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<suite name="Solaris Performance Monitor Test">
+  <class>solaris_sys_monitor.SysMonitorTest</class>
+  <description>
+    Tests which verify the Solaris Performance Monitor functionality.
+  </description>
+  <case name="Check the information in System tab">
+    <method>sys_info_test</method>
+    <description>
+      Test will check the information listed in System tab.
+    </description>
+  </case>
+  <case name="Change Processes view options to My Processes in Processes tab">
+    <method>processes_view_test</method>
+    <description>
+      Test will change processes view to My Processes.
+    </description>
+    <args>
+      <view>My</view>
+    </args>
+  </case>
+  <case name="Change Processes view options to Active Processes in Processes tab">
+    <method>processes_view_test</method>
+    <description>
+      Test will change processes view to Active Processes.
+    </description>
+    <args>
+      <view>Active</view>
+    </args>
+  </case>
+  <case name="Change Processes view options to All Processes in Processes tab">
+    <method>processes_view_test</method>
+    <description>
+      Test will change processes view to All Processes.
+    </description>
+    <args>
+      <view>All</view>
+    </args>
+  </case>
+  <case name="Not change the view options in Processes tab">
+    <method>processes_view_test</method>
+    <description>
+      Test will keep processes view same to last test case.
+    </description>
+    <args>
+      <view>All</view>
+    </args>
+  </case>
+  <case name="Check the information in Resources tab">
+    <method>resources_test</method>
+    <description>
+      Test will check the information on labels listed in Resources tab.
+    </description>
+  </case>
+  <case name="Open and close Preferences dialog in application">
+    <method>pref_test</method>
+    <description>
+      Test will try to open the application preferences dialog and then close it.
+    </description>
+  </case>
+</suite>

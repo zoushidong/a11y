@@ -1,0 +1,21 @@
+GNOME ABOUT ME TESTS
+====================
+
+Safety
+------
+
+The tests will change the user personal information previously added, so please be careful if you have useful information
+in the about-me or evolution for your profile, but they don't touch any password on the system.
+
+Configuration
+-------------
+
+The tests don't need any special configuration.
+
+Available Tests
+---------------
+
+* Change Text values.
+* Change Photo to PNG.
+* Change Photo to SVG.
+* Clean up values and check.

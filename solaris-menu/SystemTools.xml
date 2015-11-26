@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<suite name="System Tools">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify System Tools applications in the Solaris menu
+  </description>
+  <case name="Open Disk Usage Analyzer">
+    <method>testOpenMenu</method>
+    <description>It opens Disk Usage Analyzer menu and closes the application.</description>
+    <args>
+      <menuitem>Disk Usage Analyzer</menuitem>
+      <windowname>Disk Usage Analyzer</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Open File Browser">
+    <method>testOpenMenu</method>
+    <description>It opens File Browser menu and closes the application.</description>
+    <args>
+      <menuitem>File Browser</menuitem>
+      <windowname>*-File Browser</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Open Performance Monitor">
+    <method>testOpenMenu</method>
+    <description>It opens the Performance Monitor menu and closes the application.</description>
+    <args>
+      <menuitem>Performance Monitor</menuitem>
+      <windowname>System Monitor</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Open System Log">
+    <method>testOpenMenu</method>
+    <description>It opens the System Log menu and closes the application.</description>
+    <args>
+      <menuitem>System Log</menuitem>
+      <windowname>*-System Log Viewer</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+</suite>

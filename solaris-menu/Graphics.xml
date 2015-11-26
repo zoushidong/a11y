@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<suite name="graphics">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify Graphics applications in the Opensolaris menu
+  </description>
+  <case name="Open Digital Camera Browser">
+    <method>testOpenMenu</method>
+    <description>It opens the Digital Camera Browser menu and closes the application.</description>
+    <args>
+      <menuitem>Digital Camera Browser</menuitem>
+      <windowname>gtkam</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <!--
+  <case name="Open Image Editor">
+    <method>testOpenMenu</method>
+    <description>It opens the Image Editor menu and closes the application.</description>
+    <args>
+      <menuitem>Image Editor</menuitem>
+      <windowname>GNU Image Manipulation Program</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  -->
+  <case name="Open Image Viewer">
+    <method>testOpenMenu</method>
+    <description>It opens the Image Viewer menu and closes the application.</description>
+    <args>
+      <menuitem>Image Viewer</menuitem>
+      <windowname>Eye of GNOME Image Viewer</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+</suite>

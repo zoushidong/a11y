@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<suite name="Preferences">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify applications in the Solaris Preferences menu
+  </description>
+  <case name="Open About Me">
+    <method>testOpenMenu</method>
+    <description>It opens the About Me menu and closes the application.</description>
+    <args>
+      <menuitem>About Me</menuitem>
+      <windowname>dlgAbout*</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Appearance">
+    <method>testOpenMenu</method>
+    <description>It opens the Appearance menu and closes the application.</description>
+    <args>
+      <menuitem>Appearance</menuitem>
+      <windowname>dlgAppearancePreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Assistive Technologies">
+    <method>testOpenMenu</method>
+    <description>It opens the Assistive Technologies menu and closes the application.</description>
+    <args>
+      <menuitem>Assistive Technologies</menuitem>
+      <windowname>dlgAssistiveTechnologiesPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Desktop Sharing">
+    <method>testOpenMenu</method>
+    <description>It opens the Desktop Sharing menu and closes the application.</description>
+    <args>
+      <menuitem>Desktop Sharing</menuitem>
+      <windowname>dlgRemoteDesktopPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Monitors">
+    <method>testOpenMenu</method>
+    <description>It opens the Monitors menu and closes the application.</description>
+    <args>
+      <menuitem>Monitors</menuitem>
+      <windowname>dlgMonitorPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open File Indexing">
+    <method>testOpenMenu</method>
+    <description>It opens the File Indexing menu and closes the application.</description>
+    <args>
+      <menuitem>File Indexing</menuitem>
+      <windowname>dlgTrackerPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnOK</closename>
+    </args>
+  </case>
+  <case name="Open File Management">
+    <method>testOpenMenu</method>
+    <description>It opens the File Management menu and closes the application.</description>
+    <args>
+      <menuitem>File Management</menuitem>
+      <windowname>dlgFileManagementPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Input Method Selector">
+    <method>testOpenMenu</method>
+    <description>It opens the Input Method Selector menu and closes the application.</description>
+    <args>
+      <menuitem>Input Method Selector</menuitem>
+      <windowname>dlgInputMethodFrameworkSelector</windowname>
+      <closetype>button</closetype>
+      <closename>btnCancel</closename>
+    </args>
+  </case>
+  <case name="Open Java">
+    <method>testOpenMenu</method>
+    <description>It opens the Java menu and closes the application.</description>
+    <args>
+      <menuitem>Java</menuitem>
+      <windowname>frmJavaControlPanel</windowname>
+      <closetype>button</closetype>
+      <closename>btnOK</closename>
+    </args>
+  </case>
+  <case name="Open Keyboard">
+    <method>testOpenMenu</method>
+    <description>It opens the Keyboard menu and closes the application.</description>
+    <args>
+      <menuitem>Keyboard</menuitem>
+      <windowname>dlgKeyboardPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Keyboard Shortcuts">
+    <method>testOpenMenu</method>
+    <description>It opens the Keyboard Shortcuts menu and closes the application.</description>
+    <args>
+      <menuitem>Keyboard Shortcuts</menuitem>
+      <windowname>dlgKeyboardShortcuts</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Main Menu">
+    <method>testOpenMenu</method>
+    <description>It opens the Main Menu menu and closes the application.</description>
+    <args>
+      <menuitem>Main Menu</menuitem>
+      <windowname>dlgMainMenu</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Mouse">
+    <method>testOpenMenu</method>
+    <description>It opens the Mouse menu and closes the application.</description>
+    <args>
+      <menuitem>Mouse</menuitem>
+      <windowname>dlgMousePreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Network Proxy">
+    <method>testOpenMenu</method>
+    <description>It opens the Network Proxy menu and closes the application.</description>
+    <args>
+      <menuitem>Network Proxy</menuitem>
+      <windowname>dlgNetworkProxyPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Pop-Up Notifications">
+    <method>testOpenMenu</method>
+    <description>It opens the Pop-Up Notification menu and closes the application.</description>
+    <args>
+      <menuitem>Pop-Up Notifications</menuitem>
+      <windowname>dlgNotificationSettings</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Power Management">
+    <method>testOpenMenu</method>
+    <description>It opens the Power Management menu and closes the application.</description>
+    <args>
+      <menuitem>Power Management</menuitem>
+      <windowname>frmPowerManagementPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Preferred Applications">
+    <method>testOpenMenu</method>
+    <description>It opens the Preferred Applications menu and closes the application.</description>
+    <args>
+      <menuitem>Preferred Applications</menuitem>
+      <windowname>dlgPreferredApplications</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Screensaver">
+    <method>testOpenMenu</method>
+    <description>It opens the Screensaver menu and closes the application.</description>
+    <args>
+      <menuitem>Screensaver</menuitem>
+      <windowname>frmScreensaverPreferences*</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Open Startup Applications">
+    <method>testOpenMenu</method>
+    <description>It opens Startup Applications menu and closes the application.</description>
+    <args>
+      <menuitem>Startup Applications</menuitem>
+      <windowname>dlgStartupApplicationsPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Sound">
+    <method>testOpenMenu</method>
+    <description>It opens Volume Control menu and closes the application.</description>
+    <args>
+      <menuitem>mnuSound</menuitem>
+      <windowname>frmVolumeControl*</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Windows">
+    <method>testOpenMenu</method>
+    <description>It opens Windows menu and closes the application.</description>
+    <args>
+      <menuitem>Windows</menuitem>
+      <windowname>dlgWindowPreferences</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open Help">
+    <method>testOpenMenu</method>
+    <description>It opens Help menu and closes the application.</description>
+    <args>
+      <menuitem>Help</menuitem>
+      <windowname>frmDesktop</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuCloseWindow</closename>
+    </args>
+  </case>
+  <case name="Open About Oracle Solaris">
+    <method>testOpenMenu</method>
+    <description>It opens About Oracle Solaris menu and closes the application.</description>
+    <args>
+      <menuitem>About Oracle Solaris</menuitem>
+      <windowname>dlgWelcometoOracleSolaris</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Open About GNOME">
+    <method>testOpenMenu</method>
+    <description>It opens About GNOME menu and closes the application.</description>
+    <args>
+      <menuitem>About GNOME</menuitem>
+      <windowname>dlgAbouttheGNOMEDesktop</windowname>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+</suite>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<suite name="Solaris Fonts Test">
+  <class>solaris_fonts.SolarisFontTests</class>
+  <description>
+    Tests which verify Solaris desktop font properties can be changed by gnome-appearance-properties
+  </description>
+  <case name="Change Application font to Clean Italic 8">
+    <method>test_font_change</method>
+    <description>Test that changes Application font to Clean Italic 8.</description>
+    <args>
+      <category>APPLICATION</category>
+    </args>
+  </case>
+  <case name="Change Document font to Newspaper Bold 22">
+    <method>test_font_change</method>
+    <description>Test that changes Document font to Newspaper Bold 22.</description>
+    <args>
+      <category>DOCUMENT</category>
+    </args>
+  </case>
+  <case name="Change Desktop font to Serif Bold Italic 6">
+    <method>test_font_change</method>
+    <description>Test that changes Desktop font to Serif Bold Italic 6.</description>
+    <args>
+      <category>DESKTOP</category>
+    </args>
+  </case>
+  <case name="Change Window title font to Monospace Regular 28">
+    <method>test_font_change</method>
+    <description>Test that changes Window title font to Monospace Regular 28.</description>
+    <args>
+      <category>WINDOWTITLE</category>
+    </args>
+  </case>
+  <case name="Change Fixed width font to Impact Normal 16">
+    <method>test_font_change</method>
+    <description>Test that changes Fixed width font to Impact Normal 16.</description>
+    <args>
+      <category>FIXEDWIDTH</category>
+    </args>
+  </case> 
+  <case name="Revert all the font settings to defaults">
+    <method>test_font_revert</method>
+    <description>Test that reverts Application font to default settings.</description>
+  </case>
+</suite>

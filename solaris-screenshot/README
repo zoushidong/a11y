@@ -1,0 +1,28 @@
+SOLARIS-SCREENSHOT TESTS
+-----------
+Tests that verify "Take Screenshot" functionality.
+
+Safety
+------
+These tests are non-destructive and safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Version
+-------
+Tests were updated for Solaris11 and its update release
+
+Available Testsuites
+--------------------
+
+* take screenshot
+  Tests that take and verify screen shots
+  - Grab Desktop with effects on/off
+    Takes a screen shot of the entire desktop with effects on/off
+  - Grab Window with effects on/off
+    Takes a screen shot of the current window after a delay with 
+    effects on/off
+  - Grab Area
+    Takes a screen shot of a small area of the screen

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<suite name="Solaris At-Properties Test">
+  <class>solaris_at_properties.VerifyAtProperties</class>
+  <description>
+    Tests which verify the Gnome-at-properties functionality.
+  </description>
+  <case name="Verify invoking Preferred Applications dialog">
+    <method>verify_pref_app</method>
+    <description>
+      To invoke Preferred Applications dialog from gnome-at-properties application.
+    </description>
+  </case>
+  <case name="Verify enable assistive technologies checkbox">
+    <method>verify_a11y_enabled</method>
+    <description>
+      To verify enable assistive technologies checkbox from gnome-at-properties application.
+    </description>
+  </case>
+  <case name="Verify invoking Keyboard Accessibility dialog">
+    <method>verify_keyboard_a11y</method>
+    <description>
+      To invoke Keyboard Accessibility Preferences dialog from gnome-at-properties application.
+    </description>
+  </case>
+  <case name="Verify invoking Mouse Accessibility dialog">
+    <method>verify_mouse_a11y</method>
+    <description>
+      To invoke Mouse Accessibility Preferences dialog from gnome-at-properties application.
+    </description>
+  </case>
+</suite>

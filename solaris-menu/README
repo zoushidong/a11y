@@ -1,0 +1,77 @@
+Solaris Menu Tests 
+-----------------
+Tests that verify Solaris main manu functionality. It tries to open and close every application
+
+Safety
+------
+None of these tests touches any configuration or system files. They are safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Available Tests
+---------------
+
+* Accessories(7 cases)
+    - Open Archive Manager
+    - Open Calculator
+    - Open Character Map
+    - Open Find Files
+    - Open Take Screenshot
+    - Open Text Editor
+    - Open PDA Synchronization
+
+* Graphics(3 case)
+    - Open Digital Camera Browser
+    - Open Image Editor
+    - Open Image Viewer
+
+* Internet(3 cases)
+    - Open Firefox
+    - Open Pidgin
+    - Open Thunderbird Mail/Calendar
+
+* Office(2 case)
+    - Open Dictionary
+    - Open Evince Document Viewer
+    
+* Sound And Video(1 case)
+    - Open Brasero(stopped)
+    - Open CD Ripper(stopped)
+    - Open Movie Player(stopped)
+    - Open Rhythmbox Music Players
+
+* System Tools(6 cases)
+    - Open Device Driver Utility
+    - Open Disk Usage Analyzer
+    - Open File Browser
+    - Open GParted Partition Editor
+    - Open Performance Monitor
+    - Open System Log
+
+* Preferences(24 cases)
+    - Open About Me
+    - Open Appearance
+    - Open Assistive Technologies
+    - Open Desktop Sharing
+    - Open Display
+    - Open File Indexing
+    - Open File Management
+    - Open Input Methods
+    - Open Java
+    - Open Keyboard
+    - Open Keyboard Shortcuts
+    - Open Main Menu
+    - Open Mouse
+    - Open Network Proxy
+    - Open Pop-Up Notifications
+    - Open Power Management
+    - Open Preferred Applications
+    - Open Screensaver
+    - Open Startup Applications
+    - Open Volume Control
+    - Open Windows
+    - Open Help
+    - Open About OpenSolaris
+    - Open About GNOME

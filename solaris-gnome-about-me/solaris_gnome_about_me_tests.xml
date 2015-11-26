@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<suite name="SolarisGnomeAboutMe">
+  <class>solaris_gnome_about_me_tests.SolarisGnomeAboutMeTests</class>
+  <description>
+    Tests which verify Solaris Gnome_about_me basics functionality.
+  </description>
+  <case name="Change Text Values">
+    <method>change_text_values</method>
+    <description>Change the text values of about me and check if they were saved correctly</description>
+  </case>
+  <case name="Change Picture to PNG">
+    <method>change_picture_to_png</method>
+    <description>Change the picture to a PNG image</description>
+    <args>
+      <photo_path>data/avatar.png</photo_path>
+    </args>
+  </case>
+  <case name="Change Picture to SVG">
+    <method>change_picture_to_svg</method>
+    <description>Changethe picture to a SVG image</description>
+    <args>
+      <photo_path>data/avatar.svg</photo_path>
+    </args>
+  </case>
+  <case name="Clean up values">
+    <method>clean_up_fields_and_picture</method>
+    <description>Clean up values and check if they were really removed.</description>
+  </case>
+</suite>

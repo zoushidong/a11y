@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<suite name="firefox home">
+  <class>firefox_home.Firefox6HomeTest</class>
+  <description>
+    Tests open firefox preferences window, change homepage, verify the result, then restore homepage to default.
+  </description>
+<!--
+#The bug #7155478 blocked all the cases, skip following cases
+  <case name="Change home to Google.com">
+    <method>testhome</method>
+    <description>Test change homepage to Google.</description>
+    <args>
+      <home_page>www.google.com</home_page>
+      <title>Google</title>
+    </args>
+  </case>
+  <case name="Change home to Mozilla.org">
+    <method>testhome</method>
+    <description>Test change homepage to Mozilla.org.</description>
+    <args>
+      <home_page>www.mozilla.org</home_page>
+      <title>Home of the Mozilla Project</title>
+    </args>
+  </case>
+  <case name="Change home to Apple.com">
+     <method>testhome</method>
+     <description>Test change homepage to Apple.com</description>
+     <args>
+       <home_page>www.apple.com</home_page>
+       <title>Apple</title>
+     </args>
+  </case>
+  <case name="Change home to GNOME.org">
+     <method>testhome</method>
+     <description>Test change homepage to GNOME.org.</description>
+     <args>
+       <home_page>www.gnome.org</home_page>
+       <title>GNOME</title>
+     </args>
+  </case>
+  <case name="Change home to Twitter.com">
+    <method>testhome</method>
+    <description>Test change homepage to Twitter.com</description>
+    <args>
+      <home_page>twitter.com</home_page>
+      <title>Twitter</title>
+    </args>
+  </case>
+  <case name="Change home to Yahoo.com">
+    <method>testhome</method>
+    <description>Test change homepage to Yahoo.com</description>
+    <args>
+      <home_page>www.yahoo.com</home_page>
+      <title>Yahoo!</title>
+    </args>
+  </case>
+  <case name="Change home to Adobe.com">
+    <method>testhome</method>
+    <description>Test change homepage to Adobe.com</description>
+    <args>
+      <home_page>www.adobe.com</home_page>
+      <title>Adobe</title>
+    </args>
+  </case>
+  <case name="Change home to Youtube.com">
+    <method>testhome</method>
+    <description>Test change homepage to Youtube.com</description>
+    <args>
+      <home_page>www.youtube.com</home_page>
+      <title>YouTube - Broadcast Yourself.</title>
+    </args>
+  </case>
+-->
+</suite>

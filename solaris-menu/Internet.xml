@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<suite name="Internet">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify Internet applications in the OpenSolaris menu
+  </description>
+  <case name="Open Pidgin Internet Messenger">
+    <method>testOpenMenu</method>
+    <description>It opens the Pidgin menu and closes the application.</description>
+    <args>
+      <menuitem>Pidgin Internet Messenger</menuitem>
+      <windowname>frmBuddyList</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+</suite>

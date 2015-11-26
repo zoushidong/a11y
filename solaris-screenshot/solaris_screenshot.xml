@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<suite name="Solaris Screenshot Test">
+  <class>solaris_screenshot.TakeScreenshot</class>
+  <description>
+    Tests which verify the Take Screenshot functionality.
+  </description>
+  <case name="Grab the whole desktop with effects on">
+    <method>solaris_screenshot</method>
+    <description>
+        Grab a screenshot of the desktop after a delay with effects on.
+    </description>
+    <args>
+        <option>Grab the whole desktop</option>
+        <effect>1</effect>
+        <delay>3</delay>
+        <filename>desktop_effect_on.png</filename>
+    </args>
+  </case>
+  <case name="Grab the whole desktop with effects off">
+    <method>solaris_screenshot</method>
+    <description>
+        Grab a screenshot of the desktop after a delay with effects off.
+    </description>
+    <args>
+        <option>Grab the whole desktop</option>
+        <effect>0</effect>
+        <delay>2</delay>
+        <filename>desktop_effect_off.png</filename>
+    </args>
+  </case>
+  <case name="Grab the current window with effects on">
+    <method>solaris_screenshot</method>
+    <description>
+        Grab a screenshot of the current window after a delay with effects on.
+    </description>
+    <args>
+        <option>Grab the current window</option>
+        <effect>1</effect>
+        <delay>1</delay>
+        <filename>window_effect_on.png</filename>
+    </args>
+  </case>
+  <case name="Grab the current window with effects off">
+    <method>solaris_screenshot</method>
+    <description>
+        Grab a screenshot of the current window after a delay with effects off.
+    </description>
+    <args>
+        <option>Grab the current window</option>
+        <effect>0</effect>
+        <delay>0</delay>
+        <filename>window_effect_off.png</filename>
+    </args>
+  </case>
+  <case name="Grab the selected area">
+    <method>solaris_screenshot</method>
+    <description>
+        Grab a screenshot of the selected area.
+    </description>
+    <args>
+        <option>Select area to grab</option>
+        <effect>1</effect>
+        <delay>5</delay>
+        <filename>select_area.png</filename>
+    </args>
+  </case>
+</suite>

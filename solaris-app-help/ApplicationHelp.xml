@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<suite name="application-help">
+  <class>solaris_app_help.SolarisAppHelpTest</class>
+  <description>
+    Tests that start and close the Help from application, verify the Help menu/button can invoke gnome-help
+  </description>
+  <case name="Invoke Dictionary Help">
+    <method>testAppHelp</method>
+    <description>It opens the Dictionary Help and closes the Help window.</description>
+    <args>
+      <appname>gnome-dictionary</appname>
+      <windowname>frmDictionary</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmDictionaryManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Archive Manager Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Archive Manager and then closes the Help window.</description>
+    <args>
+      <appname>file-roller</appname>
+      <windowname>frmArchiveManager</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmArchiveManagerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Calculator Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Calculator and then closes the Help window.</description>
+    <args>
+      <appname>gcalctool</appname>
+      <windowname>frmCalculator*</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmGCalctoolHelp</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Character Map Help">
+    <method>testAppHelp</method>
+    <description>It opens the  Help from application Character Map and then closes the Help window.</description>
+    <args>
+      <appname>gnome-character-map</appname>
+      <windowname>frmCharacterMap</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmCharacterMapManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Find Files Help">
+    <method>testAppHelp</method>
+    <description>It opens the  Help from application Find Files and then closes the Help window.</description>
+    <args>
+      <appname>gnome-search-tool</appname>
+      <windowname>frmSearchforFiles</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmSearchforFilesManual</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Gedit Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Gedit and then closes the Help window.</description>
+    <args>
+      <appname>gedit</appname>
+      <windowname>frmUnsavedDocument*gedit</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmGeditManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke gnome-pilot Settings Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application gnome-pilot Settings and then closes the Help window.</description>
+    <args>
+      <appname>gpilotd-control-applet</appname>
+      <windowname>frmgnome-pilotSettings</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmGNOMEPilotConfigurationTool</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnCancel</closename>
+    </args>
+  </case>
+  <case name="Invoke Take Screenshot Help">
+    <method>testAppHelp</method>
+    <description>It opens the  Help from application Take Screenshot and then closes the Help window.</description>
+    <args>
+      <appname>gnome-screenshot</appname>
+      <windowname>dlgSaveScreenshot</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmTakingScreenshots</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnCancel</closename>
+    </args>
+  </case>
+  <case name="Invoke Glade Interface Designer Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Glade Interface Designer and then closes the Help window.</description>
+    <args>
+      <appname>glade-3</appname>
+      <windowname>frmUnsaved1</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmGladeInterfaceDesignerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Digital Camera Browser Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Digital Camera Browser and then closes the Help window.</description>
+    <args>
+      <appname>gtkam</appname>
+      <windowname>frmgtkam</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmgtkamManual*</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Image Viewer Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Image Viewer and then closes the Help window.</description>
+    <args>
+      <appname>eog</appname>
+      <windowname>frmEyeofGNOMEImageViewer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmImageViewerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Evince Document Viewer Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Evince Document Viewer and then closes the Help window.</description>
+    <args>
+      <appname>evince</appname>
+      <windowname>frmEvinceDocumentViewer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmEvinceDocumentViewerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Brasero Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Brasero and then closes the Help window.</description>
+    <args>
+      <appname>brasero</appname>
+      <windowname>frmBrasero</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmBraseroManual*</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Rhythmbox Music Player Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Rhythmbox Music Player and then closes the Help window.</description>
+    <args>
+      <appname>rhythmbox</appname>
+      <windowname>frmMusicPlayer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmRhythmboxMusicPlayer</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <!--
+  <case name="Invoke Totem Movie Player Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Totem Movie Player and then closes the Help window.</description>
+    <args>
+      <appname>totem</appname>
+      <windowname>frmMoviePlayer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmTotemMoviePlayerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  -->
+  <case name="Invoke Disk Usage Analyzer Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Disk Usage Analyzer and then closes the Help window.</description>
+    <args>
+      <appname>baobab</appname>
+      <windowname>frmDiskUsageAnalyzer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmDiskUsageAnalyzerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke File Browser Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application File Browser and then closes the Help window.</description>
+    <args>
+      <appname>nautilus</appname>
+      <windowname>frm*FileBrowser</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmWorkingwithFiles</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Performance Monitor Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Performance Monitor and then closes the Help window.</description>
+    <args>
+      <appname>gnome-system-monitor</appname>
+      <windowname>frmSystemMonitor</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmSystemMonitorManual*</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke System Log Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application System Log and then closes the Help window.</description>
+    <args>
+      <appname>gnome-system-log</appname>
+      <windowname>frm*SystemLogViewer</windowname>
+      <helpwidget>mnuContents</helpwidget>
+      <helpwindow>frmSystemLogViewerManual</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Appearance Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Appearance and then closes the Help window.</description>
+    <args>
+      <appname>gnome-appearance-properties</appname>
+      <windowname>dlgAppearancePreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmAppearancePreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Assistive Technologies Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Assistive Technologies and then closes the Help window.</description>
+    <args>
+      <appname>gnome-at-properties</appname>
+      <windowname>dlgAssistiveTechnologiesPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmAssistiveTechnologiesPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Desktop Sharing Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Desktop Sharing and then closes the Help window.</description>
+    <args>
+      <appname>vino-preferences</appname>
+      <windowname>dlgRemoteDesktopPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmRemoteDesktopPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke File Management Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application File Management and then closes the Help window.</description>
+    <args>
+      <appname>nautilus-file-management-properties</appname>
+      <windowname>dlgFileManagementPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmViewsPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Input Method Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Input Method and then closes the Help window.</description>
+    <args>
+      <appname>imf-selector</appname>
+      <windowname>dlgInputMethodFrameworkSelector</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmInputMethodFrameworkSelectorOnlineHelp</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnCancel</closename>
+    </args>
+  </case>
+  <case name="Invoke Keyboard Preferences Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Keyboard Preferences and then closes the Help window.</description>
+    <args>
+      <appname>gnome-keyboard-properties</appname>
+      <windowname>dlgKeyboardPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmKeyboardPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Keyboard Shortcuts Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Keyboard Shortcuts and then closes the Help window.</description>
+    <args>
+      <appname>gnome-keybinding-properties</appname>
+      <windowname>dlgKeyboardShortcuts</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmKeyboardShortcutsPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Main Menu Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Main Menu and then closes the Help window.</description>
+    <args>
+      <appname>alacarte</appname>
+      <windowname>dlgMainMenu</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmCustomizingthePanelMenubar</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Mouse Preferences Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Mouse Preferences and then closes the Help window.</description>
+    <args>
+      <appname>gnome-mouse-properties</appname>
+      <windowname>dlgMousePreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmMousePreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Network Proxy Preferences Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Network Proxy Preferences and then closes the Help window.</description>
+    <args>
+      <appname>gnome-network-properties</appname>
+      <windowname>dlgNetworkProxyPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmNetworkProxyPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Power Management Preferences Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Power Management Preferences and then closes the Help window.</description>
+    <args>
+      <appname>gnome-power-preferences</appname>
+      <windowname>frmPowerManagementPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Preferred Applications Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Preferred Application and then closes the Help window.</description>
+    <args>
+      <appname>gnome-default-applications-properties</appname>
+      <windowname>dlgPreferredApplications</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmPreferredApplications</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Screensaver Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Screensaver and then closes the Help window.</description>
+    <args>
+      <appname>xscreensaver-demo</appname>
+      <windowname>frmScreensaverPreferences*</windowname>
+      <helpwidget>mnuDocumentation</helpwidget>
+      <helpwindow>frmxscreensaver</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Startup Applications Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Startup Applications and then closes the Help window.</description>
+    <args>
+      <appname>gnome-session-properties</appname>
+      <windowname>dlgStartupApplicationsPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmSettingProgramstoStartAutomaticallyWhenYouLogIn</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <!--
+  <case name="Invoke Volume Control Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Volume Control and then closes the Help window.</description>
+    <args>
+      <appname>gnome-volume-control</appname>
+      <windowname>frmVolumeControl:*</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmGNOMEVolumeControlManual*</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  -->
+  <case name="Invoke Windows Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Windows and then closes the Help window.</description>
+    <args>
+      <appname>gnome-window-properties</appname>
+      <windowname>dlgWindowPreferences</windowname>
+      <helpwidget>btnHelp</helpwidget>
+      <helpwindow>frmWindowsPreferences</helpwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Yelp Help">
+    <method>testAppHelp</method>
+    <description>It opens the Help from application Yelp and then closes the Help window.</description>
+    <args>
+      <appname>yelp</appname>
+      <windowname>frmDesktop</windowname>
+      <helpwidget>mnuContents1</helpwidget>
+      <helpwindow>frmYelpHelpBrowser</helpwindow>
+      <closetype>menu</closetype>
+      <closename>mnuCloseWindow</closename>
+    </args>
+  </case>
+</suite>

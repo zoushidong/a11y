@@ -1,0 +1,22 @@
+SOLARIS-VINO TESTS
+-----------
+Tests that verify "Solaris Desktop Sharing" functionality.
+
+Safety
+------
+These tests will enable the vnc-server when last test case finishes, this will help us read the test reports generated on other test machines.
+
+Configuration
+-------------
+No configuration is needed
+
+Version
+-------
+Tests were updated for Solaris11 and its update release
+
+Available Testsuites
+--------------------
+* Disable the Desktop Sharing
+* Enable the Desktop Sharing, and always show the status icon
+* Enable the Desktop Sharing, and Never display an icon
+* Enable the Desktop Sharing, and show the status icon only when connected

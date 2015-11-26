@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<suite name="Solaris Theme Test">
+  <class>solaris_theme.SolarisThemeTests</class>
+  <description>
+    Tests which verify Solaris desktop appearance can be changed by gnome-appearance-properties
+  </description>
+  <case name="Change Controls Theme in customize theme">
+    <method>change_gtk_theme</method>
+    <description>Test that changes the GTK Controls theme.</description>
+    <args>
+      <tab>CONTROLS</tab>
+    </args>
+  </case>
+  <case name="Change Window Border in customize theme">
+    <method>change_window_border</method>
+    <description>Test that changes the Window Border.</description>
+    <args>
+      <tab>WINDOWBORDER</tab>
+    </args>
+  </case>
+  <case name="Change Icon Theme in customize theme">
+    <method>change_icon_theme</method>
+    <description>Test that changes the Icon Theme.</description>
+    <args>
+      <tab>ICONS</tab>
+    </args>
+  </case>
+  <case name="Change Pointer Theme in customize theme">
+    <method>change_pointer_theme</method>
+    <description>Test that changes the Pointer Theme.</description>
+    <args>
+      <tab>POINTER</tab>
+    </args>
+  </case>
+</suite>

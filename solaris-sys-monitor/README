@@ -1,0 +1,23 @@
+SOLARIS-SYS-MONITOR TESTS
+-----------
+Tests that verify "Solaris Performance Monitor" functionality.
+
+Safety
+------
+These tests will not change any configurations on test machine, they are safe to run.
+
+
+Configuration
+-------------
+No configuration is needed
+
+Version
+-------
+Tests were updated for Solaris11 and its update release
+
+Available Testsuites
+--------------------
+* To verify the information listed in first System tab
+* To verify the Processes table will change its contents view according to different process view conditions
+* To verify the information listed in Resources tab
+* To verify open/close preferences dialog will not affect application itself

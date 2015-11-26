@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<suite name="Sound and Video">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify Sound and Video applications in the Opensolaris menu
+  </description>
+  <!--
+  <case name="Open Brasero Disc Burner">
+    <method>testOpenMenu</method>
+    <description>It opens Brasero Disc Burner menu and closes the application.</description>
+    <args>
+      <menuitem>Brasero Disc Burner</menuitem>
+      <windowname>Brasero</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Open CD Ripper">
+    <method>testOpenMenu</method>
+    <description>It opens CD Ripper menu and closes the application.</description>
+    <args>
+      <menuitem>CD Ripper</menuitem>
+      <windowname>Sound Juicer</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  -->
+  <case name="Open Rhythmbox Music Player">
+    <method>testOpenMenu</method>
+    <description>It opens Rhythmbox Music Player menu and closes the application.</description>
+    <args>
+      <menuitem>Rhythmbox Music Player</menuitem>
+      <windowname>Music Player</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <!--
+  <case name="Open Totem Movie Player">
+    <method>testOpenMenu</method>
+    <description>It opens Totem Movie Player"</description>
+    <args>
+      <menuitem>Totem Movie Player</menuitem>
+      <windowname>Movie Player</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  -->
+</suite>

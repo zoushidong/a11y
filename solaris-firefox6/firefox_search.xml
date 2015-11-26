@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<suite name="firefox search">
+  <class>firefox_search.Firefox6SearchTest</class>
+  <description>
+    Tests verifies doing a keyword searching with firefox bundled search engine.
+  </description>
+  <case name="Search Hello Kitty with Yahoo engine">
+    <method>testsearch</method>
+    <description>Test searches Hello Kitty with Yahoo.</description>
+    <args>
+      <search_eng>Yahoo</search_eng>
+      <search_cont>Hello Kitty</search_cont>
+    </args>
+  </case>
+  <case name="Search GNOME with Bing engine">
+    <method>testsearch</method>
+    <description>Test searches gnome with Bing.</description>
+    <args>
+      <search_eng>Bing</search_eng>
+      <search_cont>GNOME</search_cont>
+    </args>
+  </case>
+  <case name="Search Kindle with Amazon.com engine">
+    <method>testsearch</method>
+    <description>Test searches Kindle with Amazon.com.</description>
+    <args>
+      <search_eng>Amazon</search_eng>
+      <search_cont>Kindle</search_cont>
+    </args>
+  </case>
+  <case name="Search Steve Jobs with Wikipedia engine">
+    <method>testsearch</method>
+    <description>Test searches Steve Jobs with Wikipedia.</description>
+    <args>
+      <search_eng>Wikipedia</search_eng>
+      <search_cont>Steve Jobs</search_cont>
+    </args>
+  </case>
+  <case name="Search iPad with eBay engine">
+    <method>testsearch</method>
+    <description>Test searches iPad with eBay.</description>
+    <args>
+      <search_eng>eBay</search_eng>
+      <search_cont>iPad</search_cont>
+    </args>
+  </case>
+  <case name="Search Oracle with Google engine">
+    <method>testsearch</method>
+    <description>Test searches Oracle with Google.</description>
+    <args>
+      <search_eng>Google</search_eng>
+      <search_cont>oracle</search_cont>
+    </args>
+  </case>
+</suite>

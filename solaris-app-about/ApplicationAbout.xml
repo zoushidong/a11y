@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<suite name="application-about">
+  <class>solaris_app_about.SolarisAppAboutTest</class>
+  <description>
+    Tests that start and close the About dialog from application, verify the About menu/button can invoke About dialog
+  </description>
+  <case name="Invoke Dictionary About">
+    <method>testAppAbout</method>
+    <description>It opens the Dictionary About and closes the About window.</description>
+    <args>
+      <appname>gnome-dictionary</appname>
+      <windowname>frmDictionary</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutDictionary</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Evince Document Viewer About">
+    <method>testAppAbout</method>
+    <description>It opens the Evince Document Viewer About and closes the About window.</description>
+    <args>
+      <appname>evince</appname>
+      <windowname>frmEvinceDocumentViewer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutEvinceDocumentViewer</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Archive Manager About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Archive Manager and then closes the About window.</description>
+    <args>
+      <appname>file-roller</appname>
+      <windowname>frmArchiveManager</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutFileRoller</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Calculator About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Calculator and then closes the About window.</description>
+    <args>
+      <appname>gcalctool</appname>
+      <windowname>frmCalculator*</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutgcalctool</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Character Map About">
+    <method>testAppAbout</method>
+    <description>It opens the  About from application Character Map and then closes the About window.</description>
+    <args>
+      <appname>gnome-character-map</appname>
+      <windowname>frmCharacterMap</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutGNOMECharacterMap</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Gedit About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Gedit and then closes the About window.</description>
+    <args>
+      <appname>gedit</appname>
+      <windowname>frmUnsavedDocument*gedit</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutgedit</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Glade Interface Designer About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Glade Interface Designer and then closes the About window.</description>
+    <args>
+      <appname>glade-3</appname>
+      <windowname>frmUnsaved1</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutGlade</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Digital Camera Browser About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Digital Camera Browser and then closes the About window.</description>
+    <args>
+      <appname>gtkam</appname>
+      <windowname>frmgtkam</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutgtkam</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Image Editor About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Image Editor and then closes the About window.</description>
+    <args>
+      <appname>gimp</appname>
+      <windowname>frmGNUImageManipulationProgram</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutGIMP</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Image Viewer About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Image Viewer and then closes the About window.</description>
+    <args>
+      <appname>eog</appname>
+      <windowname>frmEyeofGNOMEImageViewer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutEyeofGNOME</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Pidgin About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Pidgin and then closes the About window.</description>
+    <args>
+      <appname>pidgin</appname>
+      <windowname>frmBuddyList</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutPidgin</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Brasero About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Brasero and then closes the About window.</description>
+    <args>
+      <appname>brasero</appname>
+      <windowname>frmBrasero</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutBrasero</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Rhythmbox Music Player About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Rhythmbox Music Player and then closes the About window.</description>
+    <args>
+      <appname>rhythmbox</appname>
+      <windowname>frmMusicPlayer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutRhythmbox</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <!--
+  <case name="Invoke Totem Movie Player About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Totem Movie Player and then closes the About window.</description>
+    <args>
+      <appname>totem</appname>
+      <windowname>frmMoviePlayer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutTotemMoviePlayer</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  -->
+  <case name="Invoke Disk Usage Analyzer About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Disk Usage Analyzer and then closes the About window.</description>
+    <args>
+      <appname>baobab</appname>
+      <windowname>frmDiskUsageAnalyzer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutBaobab</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke File Browser About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application File Browser and then closes the About window.</description>
+    <args>
+      <appname>nautilus</appname>
+      <windowname>frm*FileBrowser</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutNautilus</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Invoke Performance Monitor About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Performance Monitor and then closes the About window.</description>
+    <args>
+      <appname>gnome-system-monitor</appname>
+      <windowname>frmSystemMonitor</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutSystemMonitor</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke System Log About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application System Log and then closes the About window.</description>
+    <args>
+      <appname>gnome-system-log</appname>
+      <windowname>frm*SystemLogViewer</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutLogViewer</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Java Network Settings">
+    <method>testAppAbout</method>
+    <description>It opens the Network Settings from application Java and then closes the Network Settings window.</description>
+    <args>
+      <appname>jcontrol</appname>
+      <windowname>frmJavaControlPanel</windowname>
+      <aboutwidget>btnNetworkSettings</aboutwidget>
+      <aboutwindow>dlgNetworkSettings</aboutwindow>
+      <closetype>button</closetype>
+      <closename>btnOK</closename>
+    </args>
+  </case>
+  <case name="Invoke Screensaver About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Screensaver and then closes the About window.</description>
+    <args>
+      <appname>xscreensaver-demo</appname>
+      <windowname>frmScreensaverPreferences*</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgXScreenSaver</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuQuit</closename>
+    </args>
+  </case>
+  <case name="Invoke Yelp About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application Yelp and then closes the About window.</description>
+    <args>
+      <appname>yelp</appname>
+      <windowname>frmDesktop</windowname>
+      <aboutwidget>mnuAbout</aboutwidget>
+      <aboutwindow>dlgAboutHelp</aboutwindow>
+      <closetype>menu</closetype>
+      <closename>mnuCloseWindow</closename>
+    </args>
+  </case>
+  <case name="Invoke About Oracle Solaris About">
+    <method>testAppAbout</method>
+    <description>It opens the About from application About Oracle Solaris and then closes the About window.</description>
+    <args>
+      <appname>os-about</appname>
+      <windowname>dlgWelcometoOracleSolaris</windowname>
+      <aboutwidget>btnNotices</aboutwidget>
+      <aboutwindow>dlgOracleSolarisNotices</aboutwindow>
+      <closetype>button</closetype>
+      <closename>btnClose</closename>
+    </args>
+  </case>
+</suite>

@@ -1,0 +1,54 @@
+Solaris App Help Tests 
+-----------------
+Tests that verify Solaris application help(gnome-help) functionality. It tries to open every application help from its menu,
+and then closes the help application.
+
+Safety
+------
+None of these tests touches any configuration or system files. They are safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Available Tests
+---------------
+
+* Applications(37 cases)
+  --Dictionary
+  --Evince Document Viewer
+  --Archive Manager
+  --Calculator
+  --Character Map
+  --Find Files
+  --Gedit
+  --gnome-pilot Settings
+  --Take Screenshot
+  --Glade Interface Designer
+  --Digital Camera Browser
+  --Image Viewer
+  --Brasero
+  --Rhythmbox Music Player
+  --Totem Movie Player
+  --Disk Usage Analyzer
+  --File Browser
+  --Performance Monitor
+  --System Log
+  --Appearance
+  --Assistive Technologies
+  --Desktop Sharing
+  --File Management
+  --IIIM Input Methods
+  --Input Method
+  --Keyboard Preferences
+  --Keyboard Shortcuts
+  --Main Menu
+  --Mouse Preferences
+  --Network Proxy Preferences
+  --Power Management Preferences
+  --Preferred Applications
+  --Screensaver
+  --Startup Applications
+  --Volume Control
+  --Windows
+  --Yelp

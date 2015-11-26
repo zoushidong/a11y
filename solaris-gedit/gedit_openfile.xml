@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<suite name="gedit openfile">
+  <class>gedit_openfile.GEditOpenfile</class>
+  <description>
+    Tests gedit open file functionality.
+  </description>
+  <case name="Open file">
+    <method>testOpenfile</method>
+    <description>Open file</description>
+    <args>
+      <filename>/opt/wox/framework/a11y.pre</filename>
+    </args>
+  </case>
+  <case name="Open files">
+    <method>testOpenfiles</method>
+    <description>Open multiply file</description>
+    <args>
+      <filename1>/opt/wox/framework/a11y.pre</filename1>
+      <filename2>/opt/wox/framework/a11y.post</filename2>
+      <filename3>/opt/wox/framework/a11y.run</filename3>
+    </args>
+  </case>
+  
+</suite>

@@ -1,0 +1,20 @@
+BAOBAB TESTS
+=============
+
+Safety
+------
+
+None of these tests touches any configuration or system files. They are safe to run.
+
+Configuration
+-------------
+
+The tests don't need any special configuration.
+
+Available Tests
+---------------
+
+* Baobab Scans:
+  - Scan a given directory.
+  - Scan the home folder.
+  - Scan the filesystem.

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<suite name="Solaris Archive Manager Test">
+  <class>solaris_archive_manager.SolarisArchiveManagerTests</class>
+  <description>
+    Tests which verifies Solaris Archive Manager can archive and extract files
+  </description>
+  <case name="Archive a text file to .tar.gz file">
+    <method>test_archive</method>
+    <description>Tests archive manager archives a text file to .tar.gz file</description>
+    <args>
+       <file_path>data/ldtp.txt</file_path>
+       <tag>1</tag>
+    </args>
+  </case>
+  <case name="Archive a pdf file to .tar.gz file">
+    <method>test_archive</method>
+    <description>Tests archive manager archives a pdf file to .tar.gz file</description>
+    <args>
+       <file_path>data/ldtp.pdf</file_path>
+       <tag>1</tag>
+    </args>
+  </case>
+  <case name="Archive a wav file to .tar.gz file">
+    <method>test_archive</method>
+    <description>Tests archive manager archives a wav file to .tar.gz file</description>
+    <args>
+       <file_path>data/newmessage.wav</file_path>
+       <tag>1</tag>
+    </args>
+  </case>
+  <case name="Archive an image png file to .tar.gz file">
+    <method>test_archive</method>
+    <description>Tests archive manager archives a png file to .tar.gz file</description>
+    <args>
+       <file_path>data/sun_logo_white.png</file_path>
+       <tag>1</tag>
+    </args>
+  </case>
+  <case name="Archive a folder to .tar.gz file">
+    <method>test_archive</method>
+    <description>Tests archive manager archives a folder to .tar.gz file</description>
+    <args>
+       <file_path>data/</file_path>
+       <tag>0</tag>
+    </args>
+  </case>
+  <case name="Extract a .tar.gz file to /tmp/ folder">
+    <method>test_extraction</method>
+    <description>Tests archive manager extracts a .tar.gz file to /tmp/ folder</description>
+    <args>
+       <file_path>data/archive.tar.gz</file_path>
+    </args>
+  </case>
+</suite>

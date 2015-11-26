@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<suite name="Solaris Pop-up Notification Test">
+  <class>solaris_notification.NotificationTest</class>
+  <description>
+    Tests which verify the popup notification settings functionality.
+  </description>
+  <case name="Test to set popup notification dialog">
+    <method>notif_test</method>
+    <description>
+      To set popup notification dialog to Bottom Left.
+    </description>
+    <args>
+      <theme>Standard theme</theme>
+      <position>Bottom Left</position>
+    </args>
+  </case>
+  <case name="Test to set popup notification dialog">
+    <method>notif_test</method>
+    <description>
+      To set popup notification dialog to Bottom Right.
+    </description>
+    <args>
+      <theme>Standard theme</theme>
+      <position>Bottom Right</position>
+    </args>
+  </case>
+  <case name="Test to set popup notification dialog">
+    <method>notif_test</method>
+    <description>
+      To set popup notification dialog to Top Left.
+    </description>
+    <args>
+      <theme>Standard theme</theme>
+      <position>Top Left</position>
+    </args>
+  </case>
+  <case name="Test to set popup notification dialog">
+    <method>notif_test</method>
+    <description>
+      To set popup notification dialog to Top Right.
+    </description>
+    <args>
+      <theme>Standard theme</theme>
+      <position>Top Right</position>
+    </args>
+  </case>
+  <case name="Test to set popup notification dialog">
+    <method>notif_test</method>
+    <description>
+      To set popup notification dialog to Bottom Right.
+    </description>
+    <args>
+      <theme>Standard theme</theme>
+      <position>Bottom Right</position>
+    </args>
+  </case>
+</suite>

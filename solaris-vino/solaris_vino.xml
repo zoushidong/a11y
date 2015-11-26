@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<suite name="Solaris Desktop Sharing Test">
+  <class>solaris_vino.VinoTest</class>
+  <description>
+    Tests which verify the Desktop Sharing functionality.
+  </description>
+  <case name="Disable the Desktop Sharing">
+    <method>vino_test</method>
+    <description>
+      To disable the desktop sharing on application panel.
+    </description>
+    <args>
+      <status>0</status>
+      <display>1</display>
+    </args>
+  </case>
+  <case name="Enable the Desktop Sharing, and always show the status icon">
+    <method>vino_test</method>
+    <description>
+      To enable the Desktop Sharing, and keep status icon always showing on panel.
+    </description>
+    <args>
+      <status>1</status>
+      <display>1</display>
+    </args>
+  </case>
+  <case name="Disable the Desktop Sharing">
+    <method>vino_test</method>
+    <description>
+      To disable the desktop sharing on application panel.
+    </description>
+    <args>
+      <status>0</status>
+      <display>1</display>
+    </args>
+  </case>
+  <case name="Enable the Desktop Sharing, and Never display an icon">
+    <method>vino_test</method>
+    <description>
+      To enable the Desktop Sharing, and NEVER display an icon on panel.
+    </description>
+    <args>
+      <status>1</status>
+      <display>0</display>
+    </args>
+  </case>
+  <case name="Disable the Desktop Sharing">
+    <method>vino_test</method>
+    <description>
+      To disable the desktop sharing on application panel.
+    </description>
+    <args>
+      <status>0</status>
+      <display>1</display>
+    </args>
+  </case>
+  <case name="Enable the Desktop Sharing, and show the status icon only when connected">
+    <method>vino_test</method>
+    <description>
+      To Enable the Desktop Sharing, and show the status icon only when connected.
+    </description>
+    <args>
+      <status>1</status>
+      <display>2</display>
+    </args>
+  </case>
+</suite>

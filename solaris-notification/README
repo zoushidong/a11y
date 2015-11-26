@@ -1,0 +1,23 @@
+SOLARIS-NOTIFICATION TESTS
+-----------
+Tests that verify "Solaris Pop-up Notifications" functionality.
+
+Safety
+------
+These tests will not change anything in system, they are safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Version
+-------
+Tests were updated for Solaris11 and its update release
+
+Available Testsuites
+--------------------
+* Set pop-up notification dialog to Bottom Right position and preview it
+* Set pop-up notification dialog to Bottom Left position and preview it
+* Set pop-up notification dialog to Top Right position and preview it
+* Set pop-up notification dialog to Top Left position and preview it
+* Set pop-up notification dialog to Bottom Right position and preview it

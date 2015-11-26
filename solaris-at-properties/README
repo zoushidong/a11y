@@ -1,0 +1,24 @@
+SOLARIS-AT-PROPERTIES TESTS
+----
+Tests that verify "Assistive Technologies" dialog functionality.
+
+Safety
+----
+These tests are non-destructive and safe to run.
+
+Configuration
+----
+No configuration is needed
+
+Version
+----
+Tests were updated for Solaris11 and its update release
+
+Available Testsuites
+----
+* VerifyAtProperties
+  Tests that verify the functionality of assistive technologies preferences
+  - To verify clicking Preferred Applications button bringing the Preferred Applications dialog up
+  - To verify the Enable assistive technologies checkbox is checked while at-spiregistryd is invoked by default
+  - To verify clicking Keyboard Accessibility button bringing the Keyboard Accessibility Preferences dialog up
+  - To verify clicking Mouse Accessibility button bringing the Mouse Accessibility Preferences dialog up

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<suite name="office">
+  <class>solaris_menu.SolarisMenuTest</class>
+  <description>
+    Tests that verify Office applications in the Solaris menu
+  </description>
+  <case name="Open Dictionary">
+    <method>testOpenMenu</method>
+    <description>It opens the Dictionary menu and closes the application.</description>
+    <args>
+      <menuitem>Dictionary</menuitem>
+      <windowname>frmDictionary</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+  <case name="Open Evince Document Viewer">
+    <method>testOpenMenu</method>
+    <description>It opens the Evince Document Viewer menu and closes the application.</description>
+    <args>
+      <menuitem>Evince Document Viewer</menuitem>
+      <windowname>frmEvinceDocumentViewer</windowname>
+      <closetype>menu</closetype>
+      <closename>mnuClose</closename>
+    </args>
+  </case>
+</suite>

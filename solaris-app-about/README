@@ -1,0 +1,39 @@
+Solaris App About Tests 
+-----------------
+Tests that verify Solaris application about dialog functionality. It tries to open each application about dialog from its menu,
+and then closes the about dialog.
+
+Safety
+------
+None of these tests touches any configuration or system files. They are safe to run.
+
+Configuration
+-------------
+No configuration is needed
+
+Available Tests
+---------------
+
+* Applications(21 cases)
+  --Dictionary
+  --Evince Document Viewer
+  --Archive Manager
+  --Calculator
+  --Character Map
+  --Gedit
+  --Glade Interface Designer
+  --Digital Camera Browser
+  --Image Editor
+  --Image Viewer
+  --Pidgin
+  --Brasero
+  --Rhythmbox Music Player
+  --Totem Movie Player
+  --Disk Usage Analyzer
+  --File Browser
+  --Performance Monitor
+  --System Log
+  --Java
+  --Screensaver
+  --Yelp
+  --About Oracle Solaris

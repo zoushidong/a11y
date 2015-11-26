@@ -1,0 +1,22 @@
+SOLARIS ARCHIVE MANAGER TESTS
+=============================
+
+Safety
+------
+
+The test will neither change the user's file, nor change the system file, it only extracts some test files to system /tmp/ folder. They are safe to run. For the archive test, the new created tar.gz file will be removed after each test case finishes.
+
+Configurations
+------
+
+The tests don't need any special configuarations.
+
+Available Tests
+------
+
+* Create a .tar.gz file from a text file
+* Create a .tar.gz file from a png file
+* Create a .tar.gz file from a wav file
+* Create a .tar.gz file from a pdf file
+* Create a .tar.gz file from a specified folder
+* Extract a specified .tar.gz file to /tmp/ folder

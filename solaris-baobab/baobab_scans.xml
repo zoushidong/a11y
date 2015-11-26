@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<suite name="Baobab Disk Usage Analyser">
+  <class>baobab_scans.BaobabScans</class>
+  <description>
+    Tests which verify Baobab basics file functionality.
+  </description>
+  <case name="Scan_Folder">
+    <method>baobab_scan_folder</method>
+    <description>Use Baobab to scan a Folder</description>
+  </case>
+  <case name="Scan_Home_Directory">
+    <method>baobab_scan_home_directory</method>
+    <description>Use Baobab to scan the home directory</description>
+  </case>
+</suite>
