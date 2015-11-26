@@ -1,0 +1,48 @@
+Solaris Desktop test suite
+-------------------------------------------
+Dependency:
+ python(2.7)
+ ldtp(3.5)------²åÈëÎÄ¼þ1
+ 
+ 
+Most of LDTP ideas are implemented from http://safsdev.sf.net Most of the commands takes at-least 2
+arguments. First argument will be context (window in which we want to operate) and the second
+argument will be component (object in which we want to operate, based on the current context).
+Example: click ('*-gedit', 'btnNew') # Click operation will be performed on a window which is having
+*-gedit (regexp) and in that window object name 'New', which is of type 'push button'.
+ How to Access UI Objects from LDTP scripts
+Two main entities to act on an object, window name, object name.
+Window name
+To operate on a window, we need to know the window name (nothing but window title).
+Object name
+Object (the type of control in which we want to operate) can be identified either with a label or by an
+associated label.
+ 
+Accessibility library
+LDTP uses accessibility libraries (at-spi) available in GNOME environment. Using accessibility we
+can get the information about application and its current state (property). We can be able to poke
+through each layer in any application, if and only if, the application is accessibility enabled.
+set_gconf bool /desktop/gnome/interface/accessibility true
+
+test case classification:
+1.simple case : like app-open ,app-help, menu ,about-me test.
+2.complex case : like system-monitor ,verify system info.
+3.multiply case : like gedit open multiply file.
+
+test case structure£º
+mago
+--bin
+----mago             test suite entry
+--report.xsl         report format
+--testsuite.lst      test program list
+--solaris-*        
+----solaris¡ª*.py     test case
+----solaris-*.xml    provide test case data
+--mago
+----cmd              framework
+----application
+------main.py        main module contains the definition of the main Application class that is used to wrap applications functionality
+------solaris-*.py   This module provides a wrapper for LDTP to do something (like writing GEdit tests easier,launch andclose app about window).
+----test_suite       
+------main.py        test_suite module contains the definition of the TestSuite class that must be used by all test suites written for the mago package
+------solaris-*.py   This module contains the definition of the test suite for * testing.
