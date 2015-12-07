@@ -3,10 +3,11 @@ from mago.test_suite.solaris_screenshot import SolarisScreenshotTestSuite
 
 class TakeScreenshot(SolarisScreenshotTestSuite):
     def solaris_screenshot(self, option=None, effect=None, delay=None, filename=None):
+        file_path = os.getenv('HOME') + '/' + filename
+        if os.access(file_path, os.F_OK):
+            os.remove(file_path) 
         self.application.take_screenshot(option,effect,delay)
         self.application.save_to_file(filename)
-
-        file_path = os.getenv('HOME') + '/' + filename
         
         if os.access(file_path, os.F_OK):
             os.remove(file_path) 
