@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<suite name="app">
+  <class>solaris_app_open.SolarisAppOpenTest</class>
+  <description>
+    Tests to open application
+  </description>
+  <case name="Open Calculator">
+    <method>testOpenMenu</method>
+    <description>It opens Calculator application and closes it.</description>
+    <args>
+      <launchname>gcalctool</launchname>
+      <windowname>frmCalculator</windowname>
+    </args>
+  </case>
+  <case name="Open Firefox">
+    <method>testOpenMenu</method>
+    <description>It opens Firefox application and closes it.</description>
+    <args>
+      <launchname>firefox</launchname>
+      <windowname>frmMozillaFirefoxStartPage-MozillaFirefox</windowname>
+    </args>
+  </case>
+  <case name="Open gtkperf">
+    <method>testOpenMenu</method>
+    <description>It opens Calculator application and closes it.</description>
+    <args>
+      <launchname>gtkperf</launchname>
+      <windowname>frmGtkPerf</windowname>
+    </args>
+  </case>
+  <case name="Open Planner">
+    <method>testOpenMenu</method>
+    <description>It opens Planner application and closes it.</description>
+    <args>
+      <launchname>planner</launchname>
+      <windowname>frm*-Planner</windowname>
+    </args>
+  </case>
+  <case name="Open GkrellM System Monitor">
+    <method>testOpenMenu</method>
+    <description>It opens GkrellM System Monitor application and closes it.</description>
+    <args>
+      <launchname>gkrellm</launchname>
+      <windowname>frmgkrellm</windowname>
+    </args>
+  </case>
+  <case name="Open Gconf-editor">
+    <method>testOpenMenu</method>
+    <description>It opens Gconf-editor application and closes it.</description>
+    <args>
+      <launchname>gconf-editor</launchname>
+      <windowname>frmConfigurationEditor</windowname>
+    </args>
+  </case>
+  <case name="Open Gnome-audio-profiles-properties">
+    <method>testOpenMenu</method>
+    <description>It opens Gnome-audio-profiles-properties and closes it.</description>
+    <args>
+      <launchname>gnome-audio-profiles-properties</launchname>
+      <windowname>dlgEditGNOMEAudioProfiles</windowname>
+    </args>
+  </case>
+  <case name="Open Gnome-control-center">
+    <method>testOpenMenu</method>
+    <description>It opens Gnome-control-center and closes it.</description>
+    <args>
+      <launchname>gnome-control-center</launchname>
+      <windowname>frmControlCenter</windowname>
+    </args>
+  </case>
+  <case name="Open metacity-theme-viewer">
+    <method>testOpenMenu</method>
+    <description>It opens metacity-theme-viewer and closes it.</description>
+    <args>
+      <launchname>metacity-theme-viewer</launchname>
+      <windowname>frmAtlanta-Default</windowname>
+    </args>
+  </case>
+  <case name="Open Terminator">
+    <method>testOpenMenu</method>
+    <description>It opens Terminator and closes it.</description>
+    <args>
+      <launchname>terminator</launchname>
+      <windowname>frm*/bin/bash</windowname>
+    </args>
+  </case> 
+  <case name="Open Print Manager">
+    <method>testOpenMenu</method>
+    <description>It opens Print Manager and closes it.</description>
+    <args>
+      <launchname>system-config-printer</launchname>
+      <windowname>frmPrinterconfiguration-localhost</windowname>
+    </args>
+  </case>
+  <case name="Open Network">
+
+    <method>testOpenMenu</method>
+    <description>It opens Network application and closes it.</description>
+    <args>
+      <launchname>nwam-manager-properties</launchname>
+      <windowname>dlgNetworkPreferences*</windowname>
+    </args>
+  </case>
+  <case name="Open Accerciser">
+
+    <method>testOpenMenu</method>
+    <description>It opens Accerciser application and closes it.</description>
+    <args>
+      <launchname>accerciser</launchname>
+      <windowname>frmAccerciserAccessibilityExplorer</windowname>
+    </args>
+  </case>
+</suite>
