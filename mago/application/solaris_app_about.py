@@ -40,7 +40,7 @@ class AppAbout(Application):
             app.getchild(about_widget).selectmenuitem()
         else:
             app.getchild(about_widget).click()
-
+        ldtp.wait(10)
         if ldtp.waittillguiexist(about_window) == 0:
             raise ldtp.LdtpExecutionError, "The " + about_window + " window was not found. "
 
@@ -62,6 +62,6 @@ class AppAbout(Application):
             raise ldtp.LdtpExecutionError, "Can not find enabled Close/OK button in About dialog." 
 
         aboutApp.getchild(CLOSE_WIDGET).click()
-
+        ldtp.wait(10)
         if ldtp.waittillguinotexist(about_window) == 0:
             raise ldtp.LdtpExecutionError, "The " + about_window + " does not quit as expected, there is something wrong..."
