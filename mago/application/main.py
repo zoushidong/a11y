@@ -101,7 +101,7 @@ class Application:
         """
         app = ooldtp.context(self.name)
         close_widget = app.getchild(self.close_name)
-
+        ldtp.wait(5)
         if self.close_type == 'menu':
             close_widget.selectmenuitem()
         elif self.close_type == 'button':

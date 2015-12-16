@@ -26,7 +26,7 @@ class SolarisAppOpen(Application):
 #       print "The"+ self.name + "is open"
         self._enable_a11y(False)
         
-        ldtp.wait(2) 
+        ldtp.wait(10) 
         response = ldtp.waittillguiexist(self.name, '', 100)
 #        print app_launchname,"\n"
 # 	 print ldtp.getwindowlist(),"\n"

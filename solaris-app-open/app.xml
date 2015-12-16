@@ -93,7 +93,6 @@
     </args>
   </case>
   <case name="Open Network">
-
     <method>testOpenMenu</method>
     <description>It opens Network application and closes it.</description>
     <args>

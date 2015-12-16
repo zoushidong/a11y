@@ -2,9 +2,8 @@ Solaris Desktop test suite
 -------------------------------------------
 Dependency:
  python(2.7)
- ldtp(3.5)------²åÈëÎÄ¼þ1
- 
- 
+ ldtp(3.5)
+
 Most of LDTP ideas are implemented from http://safsdev.sf.net Most of the commands takes at-least 2
 arguments. First argument will be context (window in which we want to operate) and the second
 argument will be component (object in which we want to operate, based on the current context).
@@ -46,3 +45,6 @@ mago
 ----test_suite       
 ------main.py        test_suite module contains the definition of the TestSuite class that must be used by all test suites written for the mago package
 ------solaris-*.py   This module contains the definition of the test suite for * testing.
+
+
+change  log:

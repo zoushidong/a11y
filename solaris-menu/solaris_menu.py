@@ -10,7 +10,7 @@ class SolarisMenuTest(SolarisMenuTestSuite):
         self.application.set_close_type(closetype)
         self.application.set_close_name(closename)
         self.application.open_and_check_menu_item(menuitem)
-        
+        ldtp.wait(2)
 if __name__ == "__main__":
     solaris_menu_test = SolarisMenuTest()
     solaris_menu_test.run()
