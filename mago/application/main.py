@@ -108,7 +108,7 @@ class Application:
             close_widget.click()
         else:
             raise ldtp.LdtpExecutionError, "Wrong close item type."
-        
+        ldtp.wait(10)
         response = ldtp.waittillguinotexist(self.name, '', 20)
         if response == 0:
             raise ldtp.LdtpExecutionError, "Mmm, something went wrong when closing the application."

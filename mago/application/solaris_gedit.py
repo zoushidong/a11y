@@ -76,8 +76,11 @@ class GEdit(Application):
 
     def open_files(self,filename1,filename2,filename3):
         self.open_file(filename1)
+        ldtp.wait(2)
         self.open_file(filename2)
+        ldtp.wait(2)
         self.open_file(filename3)
+        ldtp.wait(10)
         if ldtp.gettabcount(self.name,'ptl1') != 3:
             raise "gedit open multiply file failed."
         
