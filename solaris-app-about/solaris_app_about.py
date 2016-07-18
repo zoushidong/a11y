@@ -15,11 +15,11 @@ class SolarisAppAboutTest(SolarisAppAboutTestSuite):
         closename: application close widget name, such as mnuQuit, btnClose
         """
         self.application.set_name(windowname)
-        self.application.start_about(appname, aboutwidget, aboutwindow)
-        self.application.close_about(aboutwindow)
-        self.application.set_name(windowname)
         self.application.set_close_type(closetype)
         self.application.set_close_name(closename)
+        self.application.start_about(appname, aboutwidget, aboutwindow)
+        self.application.close_about(aboutwindow)
+
 
 if __name__ == "__main__":
     solaris_app_about_test = SolarisAppAboutTest()
