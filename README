@@ -46,5 +46,17 @@ mago
 ------main.py        test_suite module contains the definition of the TestSuite class that must be used by all test suites written for the mago package
 ------solaris-*.py   This module contains the definition of the test suite for * testing.
 
+Download:
+	you can download a11y test case from https://github.com/zoushidong/mago:
+	git clone https://github.com/zoushidong/mago.git
 
-change  log:
+how to run a11y:
+login with gtest user
+	cd  /opt/wox/framework
+	./a11y.pre
+	./a11y.run
+log file write in  /export/home/gtest/.mago
+
+If you want run a part of  test application,you should open a11y.run file ,and set suites as the applications you want to run .
+
+
